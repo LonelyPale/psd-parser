@@ -16,9 +16,6 @@ describe('AppController (e2e)', () => {
   });
 
   it('/psd/ping (GET)', () => {
-    return request(app.getHttpServer())
-      .get('/psd/ping')
-      .expect(200)
-      .expect('pong');
+    return request(app.getHttpServer()).get('/psd/ping').expect(200).expect('pong');
   });
 });
